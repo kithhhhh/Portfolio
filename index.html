@@ -25,7 +25,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
@@ -59,6 +59,9 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -70,7 +73,7 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                <div class="home__container grid">
+                <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
                             <a href="https://www.linkedin.com/in/keithbarrientos" target="_blank" class="home__social-icon">
@@ -139,26 +142,30 @@
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         <div class="about__info">
-                            <span class="about__info-title">08+</span>
-                            <span class="about_info-name">Years <br> experience</span>
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about_info-name">Years <br> experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about_info-name">Completed <br> projects</span>
+                            </div>
+                            
+                            <div>
+                                <span class="about__info-title">01</span>
+                                <span class="about_info-name">Company <br> worked</span>
+                            </div>
                         </div>
 
-                        <div class="about__info">
-                            <span class="about__info-title">20+</span>
-                            <span class="about_info-name">Completed <br> project</span>
-                        </div>
-
-                        <div class="about__info">
-                            <span class="about__info-title">00+</span>
-                            <span class="about_info-name">Companies <br> worked</span>
+                        <div class="about__buttons">
+                            <a download="" target="_blank" href="assets/pdf/Resume_BarrientosKeith.pdf" class="button button--flex">
+                                Download Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="about__buttons">
-                        <a download="" target="_blank" href="assets/pdf/Resume_BarrientosKeith.pdf" class="button button--flex">
-                            Download Resume<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
+                    
                 </div>
             </section>
 
@@ -359,10 +366,20 @@
                                     <div>
                                         <div class="qualification__calendar">
                                             <i class="uil uil-calendar-alt"></i>
-                                            2021 - Current
+                                            August 2021 - October 2021
                                         </div>
-                                        <h3 class="qualification__title">UX/UI Intern</h3>
+                                        <h3 class="qualification__title">UX/UI Designer</h3>
                                         <span class="qualification__subtitle">Helix Software Technologies Corp.</span>
+                                    </div>
+                                </div>
+                                <div class="qualification__data">
+                                    <div>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            September 2021 - October 2021
+                                        </div>
+                                        <h3 class="qualification__title">Graphic Designer</h3>
+                                        <span class="qualification__subtitle">Mental Health PH</span>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +415,7 @@
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop the user-friendly interfaces.</p>
+                                        <p>I develop user-friendly interfaces.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
@@ -471,32 +488,127 @@
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-
-            </section>
+            <!-- <section class="project section"></section> -->
 
             <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-
-            </section>
+            <!-- <section class="testimonial section"></section> -->
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
 
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
 
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">0921-656-2390</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">kthlbarrientos@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle"> 
+                                    B 31 L 40, Melody Plains Subd., 
+                                    Brgy Muzon, City of San Jose del 
+                                    Monte, Bulacan
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input" required>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project (optional)</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input" required></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Keith</h1>
+                        <span class="footer__subtitle">Frontend Developer</span>
+                    </div>
 
-            
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="footer__link">ContactMe</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://instagram.com/sophistikeithted" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/kithhhhh" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/keithbarrientos" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; 2021-2022. All right reserved</p>
+            </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
