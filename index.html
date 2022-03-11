@@ -7,14 +7,17 @@
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
+        <!--==================== Bootstrap CSS ====================-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/style.css">
 
         <title>Keith Barrientos</title>
-        <link href="assets\img\icon.png" rel="icon">
+        <link href="assets\img\icon.png" rel="icon">    
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -51,7 +54,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact Me
+                                <i class="uil uil-message nav__icon"></i> ContactMe
                             </a>
                         </li>
                     </ul>
@@ -103,7 +106,7 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-                                    <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/perfil.png"/>
+                                    <image class="home__blob-img" x='12' y='0' xlink:href="assets/img/perfil.png"/>
                                 </g>
                             </svg>
                         </div>
@@ -111,8 +114,8 @@
                         <div class="home__data">
                             <h1 class="home__title">Hi, I am Keith</h1>
                             <h3 class="home__subtitle">Frontend developer</h3>
-                            <p class="home__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="home__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
                             <a href="#contact" class="button button--flex">
                                 Contact Me <i class="uil uil-message button__icon"></i>
                             </a>
@@ -135,11 +138,14 @@
                 <span class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <img src="assets/img/about1.jpg" alt="" class="about__img">
 
                     <div class="about__data">
-                        <p class="about__description">Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="about__description">I am a 21 years old student taking up 
+                            Bachelor of Science in Computer Science at Polytechnic University
+                            of the Philippines. I have an experience as an UI/UX Designer and Graphic
+                            Designer.
+                        </p>
 
                         <div class="about__info">
                             <div>
@@ -159,7 +165,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" target="_blank" href="assets/pdf/Resume_BarrientosKeith.pdf" class="button button--flex">
+                            <a download="" target="_blank" href="assets/pdf/KLB-Resume2022.pdf" class="button button--flex">
                                 Download Resume<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -480,18 +486,195 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">My most recent works</span>
 
-                <div class="portfolio__container container">
-                    <div>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">AB Sentilyzer</h3>
+                                <p class="portfolio__description">An aspect based sentiment analyzer which classify sentiments of the aspect
+                                    terms extracted from the input sentences and the overall polarity of each input.
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button" data-bs-toggle="modal" data-bs-target="#port1__modal">
+                                    Demo
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Retreat Management System</h3>
+                                <p class="portfolio__description">A system that gets that registers a customer who wants to attend a retreat.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button" data-bs-toggle="modal" data-bs-target="#port2__modal">
+                                    Demo
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Two-Number Game</h3>
+                                <p class="portfolio__description">A web-based lottery game.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button" data-bs-toggle="modal" data-bs-target="#port3__modal">
+                                    Demo
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio4.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Branding Designs</h3>
+                                <p class="portfolio__description">Compilation of my works for company's brochure and pamphlets as well as game mechanics and in-event materials.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button" data-bs-toggle="modal" data-bs-target="#port4__modal">
+                                    Demo
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- PORTFOLIO MODALS -->
+            <!-- PORTFOLIO 1 -->
+            <div class="modal fade" id="port1__modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">AB Sentilyzer</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video width="560" height="315" controls>
+                                <source src="/assets/vid/AB-Sentilyzer-Demo.mp4" type=video/mp4>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- PORTFOLIO 2 -->
+            <div class="modal fade" id="port2__modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Retreat Management System</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video width="560" height="315" controls>
+                                <source src="/assets/vid/Retreat-Management-System-Demo.mp4" type=video/mp4>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- PORTFOLIO 3 -->
+            <div class="modal fade" id="port3__modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Two Number Game</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video width="560" height="315" controls>
+                                <source src="/assets/vid/Two-Number-Game-Demo.mp4" type=video/mp4>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- PORTFOLIO 4 -->
+            <div class="modal fade" id="port4__modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">AB Sentilyzer</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pdf1">
+                            <h5>Company Brochure</h5>
+                            <iframe src="assets/pdf/Company-Brochure.pdf" width="100%" height="300px"></iframe>
+                        </div>
+                        <br>
+                        <div class="pdf2">
+                            <h5>Company Pamphlet</h5>
+                            <iframe src="assets/pdf/Company-Pamphlet.pdf" width="100%" height="300px"></iframe>
+                        </div>
+                        <br>
+                        <div class="pdf3">
+                            <h5>Ad Materials</h5>
+                            <iframe src="assets/pdf/game-mechanics.pdf" width="100%" height="300px"></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="pro">You have a new project?</h2>
+                            <p class="project__description">Contact me now and let me help you with that.</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+
+                        <img src="assets/img/project1.png" alt="" class="project__img">
                     </div>
                 </div>
             </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <!-- <section class="project section"></section> -->
-
-            <!--==================== TESTIMONIAL ====================-->
-            <!-- <section class="testimonial section"></section> -->
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
@@ -532,24 +715,24 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formsubmit.co/kthlbarrientos@gmail.com" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" required>
+                                <input type="text" class="contact__input" name="name" required>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input" required>
+                                <input type="email" class="contact__input" name="email" required>
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Project (optional)</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" class="contact__input" name="project">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input" required></textarea>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
                         </div>
 
                         <div>
@@ -610,8 +793,11 @@
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
+        <!--==================== Bootstrap Bundle with Popper ====================-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

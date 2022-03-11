@@ -370,6 +370,15 @@ img{
 	transition: .3s;
 }
 
+.button--white{
+	background-color: #fff;
+	color: var(--first-color)
+}
+
+.button--white:hover{
+	background-color: #fff;
+}
+
 .button--flex{
 	display: inline-flex;
 	align-items: center;
@@ -694,12 +703,93 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container{
+	overflow: initial;
+}
 
+.portfolio__content{
+	padding: 0 1.5rem;
+}
+
+.portfolio__img{
+	width: 265px;
+	border-radius: .5rem;
+	justify-content: center;
+}
+
+.portfolio__title{
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+	margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__button:hover .button__icon{
+	transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+	content: '';
+}
+
+.swiper-portfolio-icon{
+	font-size: 2rem;
+	color: var(--first-color);
+}
+
+.swiper-button-prev{
+	left: -.5rem
+}
+
+.swiper-button-next{
+	right: -.5rem
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+	bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+	background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+	outline: none;
+}
 
 /*==================== PROJECT IN MIND ====================*/
+.project{
+	text-align: center;
+}
 
+.project__bg{
+	background-color: var(--first-color-second);
+	padding-top: 3rem;
+}
 
-/*==================== TESTIMONIAL ====================*/
+.project__title{
+	font-size: var(--h2-font-size);
+	margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+	margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+	color: #fff;
+}
+
+.project__img{
+	width: 232px;
+	justify-self: center;
+}
 
 
 /*==================== CONTACT ME ====================*/
@@ -962,6 +1052,9 @@ img{
 	.nav__menu{
 		margin-left: auto;
 	}
+	ul.nav__list.grid {
+		margin: 0;
+	}
 	.change-theme{
 		margin: 0;
 	}
@@ -1080,10 +1173,10 @@ img{
 	.swiper-portfolio-icon{
 		font-size: 3.5rem;
 	}
-	.swiperbutton-prev{
+	.swiper-button-prev{
 		left: -3.5rem;
 	}
-	.swiperbutton-next{
+	.swiper-button-next{
 		right: -3.5rem;
 	}
 	.swiper-container-horizontal > .swiper-pagination-bullets{
@@ -1095,5 +1188,8 @@ img{
 	}
 	.contact__inputs{
 		grid-template-columns: repeat(2, 1fr);
+	}
+	ul.nav__list.grid {
+		margin: 0;
 	}
 }
