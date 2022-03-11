@@ -23,7 +23,7 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">KeithTry</a>
+                <a href="#" class="nav__logo">Keith</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -715,7 +715,7 @@
                         </div>
                     </div>
 
-                    <form action="https://script.google.com/macros/s/AKfycbwkvCjC1KSiAbjqklC4wY7CR9yPYLL-lC32Vo41KQNAdslkcwI-A7molZ-RH8nqWXmNLg/exec" method="POST" class="contact__form grid">
+                    <form action="https://script.google.com/macros/s/AKfycbwP9vFIp5iqmy4amlOpXUlOKkBQD8LXm6tErzg9_mLYKjwjcvK0NAYhi9GT5HAej3Dwhg/exec" method="POST" class="contact__form grid" id="my-form">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -736,10 +736,10 @@
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" href="#" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -788,6 +788,26 @@
             </div>
         </footer>
         
+
+        <script>
+            window.addEventListener("load", function() {
+            const form = document.getElementById('my-form');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                method: 'POST',
+                body: data,
+                })
+                .then(() => {
+                    e.target.reset();
+                    
+                })
+                // e.target.reset();
+            });
+            });
+        </script>
         <!--==================== SCROLL TOP ====================-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
