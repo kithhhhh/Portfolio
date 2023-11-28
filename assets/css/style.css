@@ -414,7 +414,8 @@ img{
 	margin-bottom: var(--mb-2-5);
 }
 
-.about__info{
+.about__info,
+.qualification__info{
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: var(--mb-2-5);
@@ -1003,6 +1004,7 @@ img{
 	}
 
 	.about__container,
+	.qualification__column,
 	.portfolio__content,
 	.project__container,
 	.contact__container,
@@ -1010,6 +1012,33 @@ img{
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
+/* FOR ACCORDION */
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
+.accordion {
+	background-color: var(--input-color);
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	border-radius: 9px;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	background-color: #8ba38d;
+	color: #fff;
+}
+
 
 @media screen and (min-width: 768px){
 	.container{
