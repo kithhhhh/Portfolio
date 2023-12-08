@@ -526,10 +526,26 @@ img{
 	width: 90%;
 }
 .skills__canva{
-	width: 85%;
+	width: 90%;
 }
 .skills__photoshop{
+	width: 50%;
+}
+
+.skills__td{
+	width: 80%;
+}
+.skills__tc{
 	width: 70%;
+}
+.skills__dr{
+	width: 70%;
+}
+.skills__tel{
+	width: 80%;
+}
+.skills__um{
+	width: 80%;
 }
 
 .skills__close .skills__list{
