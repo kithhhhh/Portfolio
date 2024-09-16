@@ -1036,7 +1036,7 @@ img{
 	background-color: white;
 	overflow: hidden;
 }
-.accordion {
+.accordion, .accordion_figma {
 	background-color: var(--input-color);
 	color: #444;
 	cursor: pointer;
@@ -1053,6 +1053,10 @@ img{
 .active, .accordion:hover {
 	background-color: #8ba38d;
 	color: #fff;
+}
+
+.active, .accordion_figma:hover{
+	background-color: none;
 }
 
 
